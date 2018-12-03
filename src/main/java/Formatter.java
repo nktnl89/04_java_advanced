@@ -39,7 +39,7 @@ public class Formatter {
 
     private ArrayList<String> getSampleNumbers(String sample) {
         ArrayList<String> resultList = new ArrayList<>();
-        Pattern pattern = Pattern.compile("\\+\\d\\(\\d{3}\\)\\s\\d{3}\\s\\d{2}\\s\\d{2}");
+        Pattern pattern = Pattern.compile("\\+\\d\\(\\d{3}\\)\\ \\d{3}\\ \\d{2}\\ \\d{2}");
         Matcher matcher = pattern.matcher(sample);
         while (matcher.find()) {
             resultList.add(matcher.group());
